@@ -1,0 +1,83 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,oneside,a4paper]{article}
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+%\usepackage[catalan]{babel}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{microtype}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{datetime}
+
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{biblatex}
+
+\lstset{
+    tabsize = 4, %% set tab space width
+    showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+    numbers = left, %% display line numbers on the left
+    commentstyle = \color{green}, %% set comment color
+    keywordstyle = \color{blue}, %% set keyword color
+    stringstyle = \color{red}, %% set string color
+    rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+    basicstyle = \small \ttfamily , %% set listing font and size
+    breaklines = true, %% enable line breaking
+    numberstyle = \tiny,
+}
+
+\graphicspath{{./images/}}
+
+
+\title{%
+    \includegraphics[width=6cm,height=6cm]{images/Logo_UdL_svg}
+    \\[1cm]
+    Assignment 1
+    \\[1cm]
+    Design of the Strategic Plan of your business idea
+    \\[0.5cm]
+    \large Assignatura: \textit{Technological Business Management and Entrepreneurship}
+}
+\author{
+    Oriol Agost Batalla - 48257094N ~\\
+    Ferran Aran Domingo - 48253731F ~\\
+    Pablo Fraile Alonso - 49263972L ~\\
+    Alexandru Matei - Y1355059M ~\\
+}
+\newdate{date}{05}{03}{2024} % {DD}{MM}{YYY}
+\date{\displaydate{date}}
+\makeindex
+\newcommand{\figautorefname}{figura}
+\newcommand{\subsecautorefname}{subsecció}
+
+\setlength{\parindent}{0em}
+
+
+\begin{document}
+    \pagenumbering{gobble}
+    \maketitle
+    \thispagestyle{empty}
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \listoffigures
+
+    \newpage
+    \pagenumbering{arabic}
+    \pagestyle{plain}
+    \setcounter{page}{1}
+
+    \input{sections/section-4}
+    \newpage
+\end{document}
