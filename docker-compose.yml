@@ -3,6 +3,7 @@ version: '3.8'
 services:
   songmap:
     image: songmap:latest
+    restart: unless-stopped
     ports:
       - "8512:8512"
     volumes:
