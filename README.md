@@ -20,7 +20,20 @@ This project aims to predict the country of origin for a song based on its featu
 - **Explainability**: We provide [SHAP](https://christophm.github.io/interpretable-ml-book/shap.html) values to explain the model's decisions.
 - **Accuracy**: The model has an accuracy of 70% on the test set.
 
-### How to deploy 🚀
+## How to run notebooks 📓
+
+1. Clone the repository
+```bash
+git clone https://github.com/FerranAD/songmap.git
+cd songmap
+```
+
+2. Install the requirements (Python 3.10.13 as used in the project)
+```bash
+pip install -r requirements.txt
+```
+
+### How to deploy web app 🚀
 
 1. Clone the repository
 ```bash
