@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  songmap:
+    image: songmap:latest
+    ports:
+      - "8512:8512"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
